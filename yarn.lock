@@ -1209,39 +1209,39 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@formium/client@^0.0.17":
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/@formium/client/-/client-0.0.17.tgz#f3825f7a091b35d4edc42534be098ff5bf49e4da"
-  integrity sha512-+pTcGjYkbjmeTmY7W2bIyYii8eZdzZjmpnSYdpo/VkRDHOhCPr73VHtwVZV2C96sOeqHheFyuPhb3b59UQt8VQ==
+"@formium/client@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@formium/client/-/client-0.0.19.tgz#cefb13428679e7d234204642c0312f923b942951"
+  integrity sha512-KgC0bLzmTi4I8PtSWxelbBb9K413iG1PGLPaOYaaZ9K88HLUIGV1zZOV4bbLjqlnUIXi6RXh9IfsFLwOgLt6IQ==
   dependencies:
-    "@formium/utils" "^0.0.17"
+    "@formium/utils" "^0.0.19"
     cross-fetch "^3.0.5"
     query-string "^6.13.1"
     tslib "^2.0.0"
 
-"@formium/eval@^0.0.17":
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/@formium/eval/-/eval-0.0.17.tgz#26ba41cc1836f4f901911ff05f1e8178330eaa05"
-  integrity sha512-52DnmhLeHbZeP7YZRrT83Dphe94XG5F0YbcC7Os1ULFI6Ki6HON5EF05eqnGCNhnDNFjQQRy7Ty3LXxv4fStog==
+"@formium/eval@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@formium/eval/-/eval-0.0.19.tgz#e11734305b0f7605f831df2bcf7a7b3b54c36f5c"
+  integrity sha512-wrXEq6FqPmXwbbJuMFjZNh9KNDKWCOtp30uLCt7ROOILIIniwnBl2RKUXFOV7xRytiLiHCF8iYdx9c7TTT9pEg==
   dependencies:
     tslib "^2.0.0"
 
-"@formium/react@^0.0.17":
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/@formium/react/-/react-0.0.17.tgz#91e60a08fe8162cdd874401c327b1fc8e07d2707"
-  integrity sha512-1H2Az6QuWmo1Iulb68/VvWxACUZiw/KNxWYs/iwzVYYfApPwdsGwq26XiC2KaqoQZoahvlia5bbEvgKhROivPQ==
+"@formium/react@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@formium/react/-/react-0.0.19.tgz#a9f793b4d1bf7539ddd3f5135a88b67564670c0e"
+  integrity sha512-iF7euzRqtz70vMfRZEhpq9/7Z0zfISAX+62dxpK5f7F1Kazwc72ZzM0IdTABnxuIz5bNz04PLNF7JTiQZXCSEQ==
   dependencies:
-    "@formium/client" "^0.0.17"
-    "@formium/eval" "^0.0.17"
-    "@formium/utils" "^0.0.17"
+    "@formium/client" "^0.0.19"
+    "@formium/eval" "^0.0.19"
+    "@formium/utils" "^0.0.19"
     formik "^2.1.4"
     tslib "^2.0.0"
     yup "^0.28.1"
 
-"@formium/utils@^0.0.17":
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/@formium/utils/-/utils-0.0.17.tgz#93294967c76ff1399c096e4ca69207e995d54f3d"
-  integrity sha512-xIjJa2xLULxcw1TwsNw00nvuVg0e4xoQ03W1Eg+iBqSLY2T7v3uY4+swESlNTmenq0dOeWMSFH8mtCctu6+BGQ==
+"@formium/utils@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@formium/utils/-/utils-0.0.19.tgz#c50d5c25b03882c13fb1a2340ca770cf99c1c8cb"
+  integrity sha512-s2gpJYWeXy/x/WX43H6j6enbP4i5ZG3M3Gnplzc+wWiFHwYvKcbrNG/3sV1sqrkDQu59HNhsiKKH+Klc1sTbdg==
   dependencies:
     tslib "^2.0.0"
 

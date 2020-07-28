@@ -35,9 +35,6 @@ export default function FormPage(props: any) {
   }
   return (
     <>
-      <Head>
-        <title>{props.form.title}</title>
-      </Head>
       <FormiumForm
         formSlug={props.form.slug}
         data={props.form}
@@ -45,13 +42,6 @@ export default function FormPage(props: any) {
           ...defaultComponents,
           ...FormiumComponents,
           PageWrapper: ({ children }: any) => <>{children}</>,
-          Header: ({ page }: any) => (
-            <header>
-              <h1 style={{ display: 'inline-flex', alignItems: 'center' }}>
-                {page.title}
-              </h1>
-            </header>
-          ),
         }}
         onSubmit={async (values) => {
           if (props.preview) {
@@ -134,7 +124,6 @@ export const getStaticPaths = async () => {
   try {
     // By default we only return 10 results, max is 100 per request. Be aware of rate limits.
     const { data: forms, next } = await formium.findForms({ limit: 100 });
-
     // Map forms to just slugs
     return {
       paths: forms.map((form) => ({
