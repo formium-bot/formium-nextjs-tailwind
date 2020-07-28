@@ -131,18 +131,19 @@ export const getStaticProps: GetStaticProps<
 };
 
 export const getStaticPaths = async () => {
-  // By default we only return 10 results, max is 100 per request. Be aware of rate limits.
-  const { data: forms, next } = await formium.findForms({ limit: 100 });
+  try {
+    // By default we only return 10 results, max is 100 per request. Be aware of rate limits.
+    const { data: forms, next } = await formium.findForms({ limit: 100 });
 
-  // if (next) {
-  //   const { data: moreForms } = await client.findForms({
-  //     limit: 100,
-  //     from: next, // it's a cursor
-  //   });
-  // }
-
-  // Map forms to just slugs
-  return forms.map((form) => ({
-    params: { slug: form.slug },
-  }));
+    // Map forms to just slugs
+    return {
+      paths: forms.map((form) => ({
+        params: { slug: form.slug },
+      })),
+      fallback: false,
+    };
+  } catch (error) {
+    console.log(error);
+  }
+  return [];
 };
