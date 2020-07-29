@@ -9,7 +9,7 @@ export default async (req, res) => {
 
   // Fetch the headless CMS to check if the provided `slug` exists
   // getPostBySlug would implement the required fetching logic to the headless CMS
-  const form = await formium.getFormById(query.id);
+  const form = await formium.getFormById(req.query.id);
 
   // If the slug doesn't exist prevent preview mode from being enabled
   if (!form) {
