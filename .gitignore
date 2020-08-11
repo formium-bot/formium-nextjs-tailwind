@@ -3,6 +3,8 @@ node_modules
 .next
 .DS_Store
 out/
+.yalc
+yalc.lock
 
 # copied in next.config.js
 .now
